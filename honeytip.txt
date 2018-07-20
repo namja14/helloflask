@@ -1,0 +1,19 @@
+[플라스크 프로젝트]
+1. 폴더생성 : guestbook
+2.  guestbook 하위 폴더 : static, templates
+3. 기준이 되는 파일을 만들었음 guest.py :python guest.py
+4. 데이터베이스 준비 (create table ...)
+신사2
+{% extends "layout.html" %}
+{% block body %}
+  <ul>
+  {% for user in users %}
+    <li><a href="{{ user.url }}">{{ user.username }}</a></li>
+  {% endfor %}
+  </ul>
+{% endblock %}
+
+CSS 
+태그 {속성:값}
+.xxx {속성:값}
+#yyy {속성:값}

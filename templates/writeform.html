@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="{{ url_for('static',filename='js/myscript.js')}}">
+
+        </script>
+    </head>
+    <body>
+        <!-- HTML 주석-->
+        <h1>방명록 글쓰기</h1>
+        <form action="write" method="POST" name="frml"><!--텍스트형식으로 정보 쏴줌--> 
+            <table width="500" >
+                <tr>
+                    <td>이름</td>              
+                    <td><input type="text" name="name"></td>                    
+                        
+                </tr>
+                <tr><!--table 행 td는 테이블 내용-->
+                    <td>제목</td>              
+                    <td><input type="text" name="subject"></td>                    
+                    
+                </tr>
+                <tr>
+                    <td>내용</td>              
+                    <td><textarea name="content" cols="30" rows="10"></textarea></td>                    
+                    
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="저장" onclick="check()"><!--submit은 전송 reset은 껄끔하게 지우는거-->
+                        <input type="reset" value="취소">
+                    </td>
+                </tr>
+                
+            </table>
+
+        </form>
+        
+
+    </body>
+</html>

@@ -1,0 +1,36 @@
+칼럼명 자료형 not null
+날짜 타임스템퍼 시간도장 디폴트값 현제 시간
+너무너무 어렵다
+C insert
+R select
+U update
+  delete
+  + 회원 로그인 기능
+
+  하면 쇼핑몰이 된당   
+  if not exists 
+  http://203.252.203.43/share/
+
+
+@app.before_request    요청전 
+[플라스크 프로젝트]
+
+sql은 네가지 :CRUD
+insert: 저장 
+형식: insert into 테이블명(컬럽1, 컬럼2) values(값1,값2)
+예: insert into guest(subject,content) values('제목1','내용')
+select: 검색
+형식: select * from 테이블명 where 조건
+예: select * from guest
+update: 수정
+형식: update 테이블명 set 칼럼1=값1, 컬럼2=값2 where 컬럼3=값3 # where은 검색조건 컬럼3이 값3인 사람의 컬럼1,2를 바꿔라
+예: update member set email = 'hong@abc.com', tel = '010-1234-5678' where id = 'hong'  
+delete: 삭제
+형식: delete from 테이블명 where 컬럼1= 값1
+예: delete from guest where no=10
+
+마이 sql은 언어가 다름
+숫자 = int
+문자 = varshar(크기지정 예 : 20글자)
+날짜 = datetime
+

@@ -1,0 +1,13 @@
+{% extends "layout.html"%}
+{% block title %} test1 {% endblock %}
+{% block body %}
+<ul>
+    {# jinja2 주석{{내용을 출력합니다}}#}
+    <!-- HTML주석-->
+    {% for user in users %}
+        <li><a href="{{user.url}}">{{user.username}}</a></li>
+
+    {% endfor %}
+</ul>
+{% endblock %}
+    
